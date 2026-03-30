@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Chahat — Frontend Developer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="portfolio.css"/>
+</head>
+<body>
+
+  <!-- ══ ANIMATED NETWORK CANVAS ══ -->
+  <canvas id="netCanvas"></canvas>
+
+  <!-- ══ RIGHT-SIDE VERTICAL NAV ══ -->
+  <nav class="sidenav" id="sidenav">
+    <a href="#home"       title="Home">        <i class="bi bi-house-fill"></i>    </a>
+    <a href="#about"      title="About">       <i class="bi bi-person-fill"></i>   </a>
+    <a href="#skills"     title="Skills">      <i class="bi bi-code-slash"></i>    </a>
+    <a href="#experience" title="Experience">  <i class="bi bi-briefcase-fill"></i></a>
+    <a href="#projects"   title="Projects">    <i class="bi bi-grid-fill"></i>     </a>
+    <a href="#certs"      title="Certificates"><i class="bi bi-award-fill"></i>    </a>
+    <a href="#contact"    title="Contact">     <i class="bi bi-envelope-fill"></i> </a>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       SECTION 1 — HERO
+  ════════════════════════════════════ -->
+  <section id="home" class="sec">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        
+        <!-- Text (right) -->
+        <div class="col-lg-7 rvr">
+          <div class="badge-ac mb-3">
+            <span class="glow-dot"></span>Available for Freelance
+          </div>
+
+          <div class="hero-im">I'm</div>
+          <div class="hero-name">Chahat</div>
+
+          <div class="typed-row">
+            <span id="typed"></span><span class="tc">|</span>
+          </div>
+
+          <p class="hero-desc">
+            I'm a Pakistan-based Frontend Developer and IT student passionate about building clean, responsive, and visually stunning web experiences. With a love for design and code, I transform ideas into digital solutions that look great and work flawlessly.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#about"   class="btn-ac">More About Me <i class="bi bi-arrow-right"></i></a>
+            <a href="#contact" class="btn-ol-ac"><i class="bi bi-send"></i> Hire Me</a>
+          </div>
+
+          <!-- Tech pill tags -->
+          <div>
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">Bootstrap</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Git</span>
+            <span class="tech-pill">Figma</span>
+            <span class="tech-pill">UI Design</span>
+          </div>
+        </div>
+        <!-- Photo (left) -->
+        <div class="col-lg-5 text-center rvl">
+          <div class="hero-photo-box mx-auto">
+            <img src="profile pic.png" alt="Chahat"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 2 — ABOUT / PERSONAL INFO
+  ════════════════════════════════════ -->
+  <section id="about" class="sec">
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="text-center mb-5 rv">
+        <div class="sec-chip"><i class="bi bi-person"></i> About Me</div>
+        <h2 class="sh">Personal <span>Info</span></h2>
+        <div class="sh-line"></div>
+      </div>
+
+      <div class="row gy-5">
+
+        <!-- LEFT: info grid + CV button -->
+        <div class="col-lg-7 rvl">
+          <div class="row gy-4 mb-4">
+            <div class="col-md-8">
+              <div class="info-grid">
+                <div class="info-card">
+                  <div class="lbl">Full Name</div>
+                  <div class="val">Chahat Hassnain</div>
+                </div>
+                <div class="info-card">
+                  <div class="lbl">Degree</div>
+                  <div class="val">BS Computer Science</div>
+                </div>
+                <div class="info-card">
+                  <div class="lbl">Email</div>
+                  <div class="val" style="font-size:.82rem;">chahat4902@email.com</div>
+                </div>
+                <div class="info-card">
+                  <div class="lbl">Phone</div>
+                  <div class="val">+92 345 9658139</div>
+                </div>
+                <div class="info-card">
+                  <div class="lbl">Location</div>
+                  <div class="val">Rawalpindi Pakistan</div>
+                </div>
+                <div class="info-card">
+                  <div class="lbl">Languages</div>
+                  <div class="val">Urdu, English</div>
+                </div>
+                <div class="info-card">
+                  <div class="lbl">Specialty</div>
+                  <div class="val">Frontend Dev</div>
+                </div>
+                <div class="info-card">
+                  <div class="lbl">Status</div>
+                  <div class="val" style="color:var(--ac2);">Open to Work</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="philosophy-card">
+                <h5><i class="bi bi-stars me-1"></i> My Philosophy</h5>
+                <p style="font-size:.9rem;line-height:1.75;color:var(--text);">
+                  I believe great websites are built at the intersection of clean code and beautiful design. Every pixel should serve a purpose and delight the user.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CV Button -->
+          <a href="#" class="cv-btn">
+            <div class="cv-icon"><i class="bi bi-file-earmark-person"></i></div>
+            <div>
+              <div style="color:var(--ac);font-size:.9rem;font-weight:700;">View My CV</div>
+              <div style="font-size:.78rem;color:var(--text);">Click to open PDF</div>
+            </div>
+            <i class="bi bi-arrow-right ms-auto" style="color:var(--ac);"></i>
+          </a>
+        </div>
+
+        <!-- RIGHT: Bio + tech pills -->
+        <div class="col-lg-5 rvr">
+          <h3 style="color:var(--white);font-weight:800;font-size:1.6rem;margin-bottom:1rem;">
+            Frontend Developer &amp; <span style="color:var(--ac);">IT Student</span>
+          </h3>
+          <p style="color:var(--text);line-height:1.85;margin-bottom:1.2rem;">
+            I'm currently pursuing a BS in Computer Science with a deep passion for web development and UI/UX design. I love building interfaces that are both functional and beautiful.
+          </p>
+          <p style="color:var(--text);line-height:1.85;margin-bottom:1.8rem;">
+            My goal is to become a professional full-stack developer, creating digital products that deliver real value — not just pages, but experiences. I'm constantly learning, building, and growing.
+          </p>
+          <div>
+            <div style="font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);font-weight:600;margin-bottom:.7rem;">
+              Technologies I Work With
+            </div>
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">Bootstrap</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Git &amp; GitHub</span>
+            <span class="tech-pill">Figma</span>
+            <span class="tech-pill">UI Design</span>
+            <span class="tech-pill">Responsive Design</span>
+            <span class="tech-pill">CSS Animations</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 3 — SKILLS
+  ════════════════════════════════════ -->
+  <section id="skills" class="sec">
+    <div class="container">
+
+      <!-- Heading -->
+      <div class="text-center mb-2 rv">
+        <div class="sec-chip"><i class="bi bi-lightning-charge"></i> Technical Expertise</div>
+        <h2 class="sh">Professional <span>Skill Stack</span></h2>
+        <p class="sh-sub">Leveraging modern technologies and best practices to build responsive, performant, and user-centric websites</p>
+        <div class="sh-line"></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs rv" id="filterTabs">
+        <div class="ftab active" data-filter="all">⚡ All Skills</div>
+        <div class="ftab" data-filter="frontend"><i class="bi bi-code-slash"></i> Frontend</div>
+        <div class="ftab" data-filter="design"><i class="bi bi-palette"></i> Design</div>
+        <div class="ftab" data-filter="tools"><i class="bi bi-tools"></i> Tools</div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid mb-5" id="skillsGrid">
+
+        <!-- Frontend -->
+        <div class="sk-item rv" data-cat="frontend">
+          <i class="bi bi-filetype-html" style="color:#E44D26;"></i>
+          <span>HTML5</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="95"></div></div>
+        </div>
+        <div class="sk-item rv" data-cat="frontend" style="transition-delay:.05s">
+          <i class="bi bi-filetype-css" style="color:#2965f1;"></i>
+          <span>CSS3</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="90"></div></div>
+        </div>
+        <div class="sk-item rv" data-cat="frontend" style="transition-delay:.1s">
+          <i class="bi bi-bootstrap" style="color:#7952B3;"></i>
+          <span>Bootstrap</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="93"></div></div>
+        </div>
+        <div class="sk-item rv" data-cat="frontend" style="transition-delay:.15s">
+          <i class="bi bi-filetype-js" style="color:#f7df1e;"></i>
+          <span>JavaScript</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="78"></div></div>
+        </div>
+        <div class="sk-item rv" data-cat="frontend" style="transition-delay:.2s">
+          <i class="bi bi-phone"></i>
+          <span>Responsive</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="92"></div></div>
+        </div>
+
+        <!-- Design -->
+        <div class="sk-item rv" data-cat="design" style="transition-delay:.25s">
+          <i class="bi bi-vector-pen"></i>
+          <span>Figma</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="80"></div></div>
+        </div>
+        <div class="sk-item rv" data-cat="design" style="transition-delay:.3s">
+          <i class="bi bi-palette2"></i>
+          <span>UI Design</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div>
+        </div>
+        <div class="sk-item rv" data-cat="design" style="transition-delay:.35s">
+          <i class="bi bi-magic"></i>
+          <span>UX Thinking</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="75"></div></div>
+        </div>
+
+        <!-- Tools -->
+        <div class="sk-item rv" data-cat="tools" style="transition-delay:.4s">
+          <i class="bi bi-git" style="color:#F34F29;"></i>
+          <span>Git</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="82"></div></div>
+        </div>
+        <div class="sk-item rv" data-cat="tools" style="transition-delay:.45s">
+          <i class="bi bi-github"></i>
+          <span>GitHub</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="80"></div></div>
+        </div>
+        <div class="sk-item rv" data-cat="tools" style="transition-delay:.5s">
+          <i class="bi bi-terminal"></i>
+          <span>VS Code</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="88"></div></div>
+        </div>
+        <div class="sk-item rv" data-cat="tools" style="transition-delay:.55s">
+          <i class="bi bi-layout-text-sidebar"></i>
+          <span>Wireframing</span>
+          <div class="sk-bar"><div class="sk-fill" data-w="76"></div></div>
+        </div>
+
+      </div>
+
+      <!-- Download Resume -->
+      <div class="text-center rv">
+        <a href="#" class="resume-btn">
+          <i class="bi bi-download"></i> Download Detailed Resume
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 4 — EXPERIENCE & EDUCATION
+  ════════════════════════════════════ -->
+  <section id="experience" class="sec">
+    <div class="container">
+
+      <div class="text-center mb-5 rv">
+        <h2 class="sh">Experience &amp; <span>Education</span></h2>
+        <div class="sh-line"></div>
+      </div>
+
+      <div class="row gy-4">
+
+        <!-- Professional Journey -->
+        <div class="col-lg-6 rvl">
+          <div class="timeline-col-title">
+            <i class="bi bi-briefcase-fill"></i> Professional Journey
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon"><i class="bi bi-laptop"></i></div>
+            <div class="tl-title">Frontend Developer – Freelance</div>
+            <div class="tl-date">2025 – Present</div>
+            <div class="tl-desc">Building modern, responsive websites for clients using HTML, CSS, Bootstrap, and JavaScript. Focused on clean UI and smooth user experiences.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon"><i class="bi bi-brush"></i></div>
+            <div class="tl-title">UI/UX Designer – Academic Projects</div>
+            <div class="tl-date">2025 – 2026</div>
+            <div class="tl-desc">Designed wireframes and high-fidelity mockups for university projects using Figma. Led design reviews and improved team workflow efficiency.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon"><i class="bi bi-code"></i></div>
+            <div class="tl-title">Web Development Intern</div>
+            <div class="tl-date">Summer 2026</div>
+            <div class="tl-desc">Assisted in building and maintaining company websites. Implemented responsive layouts and cross-browser compatibility fixes.</div>
+          </div>
+        </div>
+
+        <!-- Academic Background -->
+        <div class="col-lg-6 rvr">
+          <div class="timeline-col-title">
+            <i class="bi bi-mortarboard-fill"></i> Academic Background
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon"><i class="bi bi-mortarboard"></i></div>
+            <div class="tl-title">BS Computer Science</div>
+            <div class="tl-date">2023 – 2027</div>
+            <div class="tl-desc">Pursuing a Bachelor's degree in Computer Science with a strong focus on software development, web technologies, and UI/UX design principles.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon"><i class="bi bi-journal-code"></i></div>
+            <div class="tl-title">Bootstrap &amp; Responsive Design Course</div>
+            <div class="tl-date">2026</div>
+            <div class="tl-desc">Completed an in-depth online course covering Bootstrap 5, CSS Grid, Flexbox, and advanced responsive design patterns.</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-icon"><i class="bi bi-award"></i></div>
+            <div class="tl-title">FSc Pre-Engineering</div>
+            <div class="tl-date">2021 – 2023</div>
+            <div class="tl-desc">Completed FSc with distinction. Developed strong analytical and problem-solving skills that form the foundation of my coding approach.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 5 — PROJECTS
+  ════════════════════════════════════ -->
+  <section id="projects" class="sec">
+    <div class="container">
+
+      <div class="text-center mb-4 rv">
+        <div class="sec-chip"><i class="bi bi-grid"></i> My Work</div>
+        <h2 class="sh">My <span>Portfolio</span></h2>
+        <p class="sh-sub">Here are some of my recent projects — each crafted with attention to detail and user experience.</p>
+        <div class="sh-line"></div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs rv">
+        <div class="ftab active">All Projects</div>
+        <div class="ftab">Frontend</div>
+        <div class="ftab">UI Design</div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-md-4 rv">
+          <div class="proj-card h-100">
+            <div class="proj-img">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=700&auto=format&fit=crop&q=80" alt="Portfolio Website"/>
+            </div>
+            <div class="proj-body">
+              <div class="proj-title">Portfolio Website</div>
+              <div>
+                <span class="proj-tag">HTML</span>
+                <span class="proj-tag">CSS</span>
+                <span class="proj-tag">Bootstrap</span>
+                <span class="proj-tag">JS</span>
+              </div>
+              <p style="font-size:.85rem;color:var(--text);margin-top:.7rem;line-height:1.65;">
+                A fully responsive developer portfolio with smooth scroll animations and modern aesthetics.
+              </p>
+              <div class="proj-actions">
+                <a href="#" class="btn-view"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
+                <a href="#" class="btn-view filled"><i class="bi bi-eye"></i> Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 rv" style="transition-delay:.1s">
+          <div class="proj-card h-100">
+            <div class="proj-img">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&auto=format&fit=crop&q=80" alt="Restaurant Website"/>
+            </div>
+            <div class="proj-body">
+              <div class="proj-title">Restaurant Website</div>
+              <div>
+                <span class="proj-tag">HTML</span>
+                <span class="proj-tag">CSS</span>
+                <span class="proj-tag">JavaScript</span>
+              </div>
+              <p style="font-size:.85rem;color:var(--text);margin-top:.7rem;line-height:1.65;">
+                A modern restaurant site with dynamic menu, online reservation form, and rich visual imagery.
+              </p>
+              <div class="proj-actions">
+                <a href="#" class="btn-view"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
+                <a href="#" class="btn-view filled"><i class="bi bi-eye"></i> Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 rv" style="transition-delay:.2s">
+          <div class="proj-card h-100">
+            <div class="proj-img">
+              <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=700&auto=format&fit=crop&q=80" alt="Landing Page"/>
+            </div>
+            <div class="proj-body">
+              <div class="proj-title">Product Landing Page</div>
+              <div>
+                <span class="proj-tag">HTML</span>
+                <span class="proj-tag">Bootstrap</span>
+                <span class="proj-tag">UI Design</span>
+              </div>
+              <p style="font-size:.85rem;color:var(--text);margin-top:.7rem;line-height:1.65;">
+                A clean, high-conversion landing page with hero animations and compelling call-to-action sections.
+              </p>
+              <div class="proj-actions">
+                <a href="#" class="btn-view"><i class="bi bi-box-arrow-up-right"></i> View Project</a>
+                <a href="#" class="btn-view filled"><i class="bi bi-eye"></i> Preview</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 6 — CERTIFICATIONS
+  ════════════════════════════════════ -->
+  <section id="certs" class="sec">
+    <div class="container">
+
+      <div class="text-center mb-5 rv">
+        <div class="sec-chip"><i class="bi bi-award"></i> Credentials</div>
+        <h2 class="sh">My <span>Certifications</span></h2>
+        <p class="sh-sub">Continuous learning and professional development</p>
+        <div class="sh-line"></div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Cert 1 -->
+        <div class="col-md-6 rv">
+          <div class="cert-card">
+            <div class="cert-img">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=700&auto=format&fit=crop&q=80" alt="Web Design Cert"/>
+            </div>
+            <div class="cert-body">
+              <div class="cert-title">Responsive Web Design</div>
+              <div class="cert-issuer">freeCodeCamp</div>
+              <div class="cert-date">2024</div>
+              <div class="cert-desc">Completed 300 hours of hands-on projects covering HTML5, CSS3, Flexbox, CSS Grid, and responsive design patterns.</div>
+              <a href="#" class="btn-cert">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="col-md-6 rv" style="transition-delay:.12s">
+          <div class="cert-card">
+            <div class="cert-img">
+              <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=700&auto=format&fit=crop&q=80" alt="Bootstrap Cert"/>
+            </div>
+            <div class="cert-body">
+              <div class="cert-title">Bootstrap 5 — Complete Course</div>
+              <div class="cert-issuer">Udemy</div>
+              <div class="cert-date">2023</div>
+              <div class="cert-desc">Mastered Bootstrap 5 including grid system, components, utilities, and building fully responsive multi-page websites.</div>
+              <a href="#" class="btn-cert">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="col-md-6 rv" style="transition-delay:.24s">
+          <div class="cert-card">
+            <div class="cert-img">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=700&auto=format&fit=crop&q=80" alt="UI Design Cert"/>
+            </div>
+            <div class="cert-body">
+              <div class="cert-title">UI/UX Design Fundamentals</div>
+              <div class="cert-issuer">Coursera</div>
+              <div class="cert-date">2023</div>
+              <div class="cert-desc">Learned core UI/UX principles, wireframing, prototyping in Figma, and user-centered design methodologies.</div>
+              <a href="#" class="btn-cert">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="col-md-6 rv" style="transition-delay:.36s">
+          <div class="cert-card">
+            <div class="cert-img">
+              <img src="https://images.unsplash.com/photo-1573164713712-03790a178651?w=700&auto=format&fit=crop&q=80" alt="JS Cert"/>
+            </div>
+            <div class="cert-body">
+              <div class="cert-title">JavaScript Essentials</div>
+              <div class="cert-issuer">Cisco Networking Academy</div>
+              <div class="cert-date">2024</div>
+              <div class="cert-desc">Covered JavaScript fundamentals including DOM manipulation, events, ES6+ features, and interactive web development.</div>
+              <a href="#" class="btn-cert">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SECTION 7 — CONTACT
+  ════════════════════════════════════ -->
+  <section id="contact" class="sec">
+    <div class="container">
+
+      <div class="text-center mb-5 rv">
+        <div class="sec-chip"><i class="bi bi-envelope"></i> Get In Touch</div>
+        <h2 class="sh">Contact <span>Me</span></h2>
+        <div class="sh-line"></div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Contact Form (left) -->
+        <div class="col-lg-7 rvl">
+          <div class="contact-form-card">
+            <h4><i class="bi bi-chat-dots me-2"></i>Send Me a Message</h4>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text"  class="form-control" placeholder="Your Name"/>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Your Email"/>
+              </div>
+              <div class="col-12">
+                <input type="text"  class="form-control" placeholder="Subject"/>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn-send">
+                  <i class="bi bi-send me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info (right) -->
+        <div class="col-lg-5 rvr">
+          <div class="contact-info-card">
+            <h4><i class="bi bi-info-circle me-2"></i>Contact Information</h4>
+            <div class="c-row">
+              <div class="c-ico"><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <div class="c-lbl">Phone</div>
+                <div class="c-val">+92 345 9658139</div>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-ico"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <div class="c-lbl">Email</div>
+                <div class="c-val">chahat4902@email.com</div>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-ico"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <div class="c-lbl">Location</div>
+                <div class="c-val">Rawalpindi Pakistan</div>
+              </div>
+            </div>
+            <div class="c-row">
+              <div class="c-ico"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <div class="c-lbl">Availability</div>
+                <div class="c-val" style="color:var(--ac2);">Open to opportunities</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="follow-card mt-3">
+            <h4><i class="bi bi-share me-2"></i>Follow Me</h4>
+            <a href="#" class="soc-btn"><i class="bi bi-github"></i></a>
+            <a href="#" class="soc-btn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="soc-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="soc-btn"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer>
+    <div class="brand">Chahat Hassnain<span style="color:var(--ac2)">.</span></div>
+    <div class="copy">
+      &copy; 2026 Chahat. Frontend Developer &amp; IT Student &middot;
+      Crafted with <span style="color:var(--ac)">♥</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="portfolio.js"></script>
+
+</body>
+</html>
