@@ -1,7 +1,4 @@
-/* ═══════════════════════════════════════
-   CHAHAT PORTFOLIO — portfolio.js
-═══════════════════════════════════════ */
-
+ 
 /* ══ 1. ANIMATED NETWORK CANVAS BACKGROUND ══ */
 const canvas = document.getElementById('netCanvas');
 const ctx    = canvas.getContext('2d');
