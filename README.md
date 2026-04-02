@@ -67,9 +67,7 @@ I'm a passionate **Frontend Developer** and **IT Student** from Pakistan, focuse
 
 ## 🔗 Connect With Me
 - GitHub: https://github.com/Chahat38  
-- LinkedIn: (Add your LinkedIn link here)  
-- Instagram: (Optional)  
-
+  
 ---
 
 ## ⚙️ How to Run Locally
